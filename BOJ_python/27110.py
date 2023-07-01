@@ -1,0 +1,12 @@
+in0 = input()
+in1 = int(in0)
+in2 = input()
+n2s = in2.split(" ")
+in2_1 = int(n2s[0])
+in2_2 = int(n2s[1])
+in2_3 = int(n2s[2])
+o1 = min(in1,in2_1)
+o2 = min(in1,in2_2)
+o3 = min(in1,in2_3)
+o=o1+o2+o3
+print(o)
