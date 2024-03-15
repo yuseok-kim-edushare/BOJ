@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2be8d22-dc6e-4bbb-adf5-4fb88c9e153d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>27110.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,8 +22,74 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="1000.py" />
-    <Compile Include="27110.py">
+    <Compile Include="1002_fail.py" />
+    <Compile Include="1002_success.py" />
+    <Compile Include="1003.py" />
+    <Compile Include="1009_fail.py" />
+    <Compile Include="1009_suc.py" />
+    <Compile Include="1010.py" />
+    <Compile Include="1011.py" />
+    <Compile Include="10773.py" />
+    <Compile Include="10814.py" />
+    <Compile Include="10815.py" />
+    <Compile Include="10816.py" />
+    <Compile Include="10826.py" />
+    <Compile Include="10828.py" />
+    <Compile Include="11650.py" />
+    <Compile Include="11651.py" />
+    <Compile Include="11659.py" />
+    <Compile Include="1181.py" />
+    <Compile Include="11866.py" />
+    <Compile Include="1312.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1340.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13411.py" />
+    <Compile Include="1417.py" />
+    <Compile Include="14582.py" />
+    <Compile Include="1543.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1676.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="18110.py" />
+    <Compile Include="1822.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1920.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1929.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2161_err.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2164.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="25206.py" />
+    <Compile Include="25374.py" />
+    <Compile Include="2546&amp;27836.py" />
+    <Compile Include="27111.py" />
+    <Compile Include="2749.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2839.py" />
+    <Compile Include="2877.py" />
+    <Compile Include="30969.py" />
+    <Compile Include="31216.py" />
+    <Compile Include="31263_fail.py" />
+    <Compile Include="31408.py" />
+    <Compile Include="31409.py" />
+    <Compile Include="31410.py" />
+    <Compile Include="7568.py" />
+    <Compile Include="9012.py" />
+    <Compile Include="9996.py" />
+    <Compile Include="2751.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
