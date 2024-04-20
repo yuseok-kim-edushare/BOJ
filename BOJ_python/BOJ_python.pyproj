@@ -56,9 +56,12 @@
     <Compile Include="1543.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="1620.py" />
     <Compile Include="1676.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="17219.py" />
+    <Compile Include="1764.py" />
     <Compile Include="18110.py" />
     <Compile Include="1822.py">
       <SubType>Code</SubType>
@@ -69,6 +72,7 @@
     <Compile Include="1929.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="2108.py" />
     <Compile Include="2161_err.py">
       <SubType>Code</SubType>
     </Compile>
@@ -91,7 +95,7 @@
     <Compile Include="31264_fail.py" />
     <Compile Include="31408.py" />
     <Compile Include="31409.py" />
-    <Compile Include="31410.py" />
+    <Compile Include="31410_fail.py" />
     <Compile Include="31713.py" />
     <Compile Include="4949.py" />
     <Compile Include="7568.py" />
