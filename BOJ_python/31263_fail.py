@@ -1,26 +1,30 @@
+import collections
+from collections import deque
 n=int(input())
 st=input()
-temp=['','','']
+temp=deque()
+col=[]
 tidx=0
-count=0
 switch1=0
+def repair():
+    global temp
+    global col
 def prot(s,idx):
     global st
     global temp
     global tidx
-    global count
+    global col
     global switch1
-    temp[tidx]=s
+    temp.append(s)
     if tidx==0:
         if s=='0':
             if st[idx-1]=='0':
-                temp=['','','']
-                count=count+1
+                col.append([st[idx-2],'0','0'])
+                temp=deque()
             else:
                 if st[idx-1] in ['7','8','9']:
-                    temp=['','','']
-                    count=count+1
-                    tidx=0
+                    col.append([st[idx-1],'0',''])
+                    temp=deque()
                 else:
                     temp=[st[idx-1],'0','']
                     tidx=2
@@ -34,14 +38,14 @@ def prot(s,idx):
             tidx=1
     elif tidx==1:
         if switch1==1:
-            temp=['','','']
-            count=count+1
+            col.append(temp)
+            temp=deque()
             tidx=0
             switch1=0
         elif switch1==2:
             if s in ['5','6','7','8','9']:
-                temp=['','','']
-                count=count+1
+                col.append(temp)
+                temp=deque()
                 tidx=0
                 switch1=0
             elif s=='4':
@@ -54,20 +58,23 @@ def prot(s,idx):
     elif tidx==2:
         if switch1==2:
             if s in ['0','1']:
-                temp=['','','']
-                count=count+1
+                col.append(temp)
+                temp=deque()
                 tidx=0
+                switch1=0
             else:
-                temp=[s,'','']
-                count=count+1
+                temp.pop()
+                col.append(temp)
+                temp=deque()
+                temp.append(s)
                 tidx=1
             switch1=0
         else:
-            temp=['','','']
-            count=count+1
+            col.append(temp)
+            temp=deque()
             tidx=0
 for i in range(0,n):
     prot(st[i],i)
-if temp[0]!='':
-    count=count+1
-print(count)
+if len(temp)!=0:
+    col.append(temp)
+print(len(col))
