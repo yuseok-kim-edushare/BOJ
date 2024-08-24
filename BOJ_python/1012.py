@@ -27,13 +27,17 @@ for i in range(t):
     M, N, K = map(int,readline().split())
     #배추 밭 가로, 세로, 심어진 배추 수 M,N,K
     if K == 1:
+        readline()
         print(1) #생각해보니 배추 1개면 탐색도 필요 없네요
     else:
         positions = [] #배추가 있는 좌표들을 저장해요
         visited = set()
         for j in range(K):
-            positions.append(tuple(map(int, readline().split())))
+            position = tuple(map(int, readline().split()))
             #좌표 입력받아서 보관할 거에요
+            if position[0] <= M and position[1] <= N:
+                positions.append(position)
+                #혹시나 싶어서 경계선 바깥에 뭔가 배추가 던져질 거 같은 공포가 들었어요.
         count = 0 # 세야 할 카운트에요. (연결된 배추 집단이 몇 개인가)
         for x in positions:
             if x not in visited:
