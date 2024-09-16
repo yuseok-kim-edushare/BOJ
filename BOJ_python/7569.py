@@ -42,10 +42,7 @@ def bfs():
         countDays += 1
     if queue: bfs()
 
-if remaining == 0:
-    print(0)
-else:
-    bfs()
+bfs()
 if remaining>0:
     countDays = -1
 print(countDays)
