@@ -1,5 +1,6 @@
 import java.io.*;
-public class Main{
+// public class Main 을 제출시 사용 해야 함
+class P_1011{
 	public static void main(String args[]){
 		BufferedReader BufferRead = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter BufferWrite = new BufferedWriter(new OutputStreamWriter(System.out));
